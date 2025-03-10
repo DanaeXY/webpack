@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, "dist")));
 
 //### POST
 app.post("/enviando-datos",(req,res)=>{
-    console.log(req)
+    
     console.log("recibo dato no server",req.body)
 
     let condicion = req.body.nome2 === 'Israel' && req.body.apelido2 === 'mariano';
