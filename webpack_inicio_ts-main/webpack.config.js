@@ -1,8 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-    mode: "development",
+    mode: "development",// pode ser 'mode:production'
     devtool: "inline-source-map",
     entry: './src/index.ts', 
     module: {
